@@ -1,4 +1,4 @@
-# gerie
+# gerie or Geriatric Genie By Flutter
 
 A new Flutter application.
 
