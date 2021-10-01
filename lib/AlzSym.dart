@@ -57,36 +57,37 @@ class AlzSymState extends State<AlzSym>{
                 Expanded(
                   child: Padding(
                     padding: EdgeInsets.all(15.0),
-                    child: FlatButton(
-                      textColor: Colors.white,
+                    child: Container(
                       color: Colors.green,
-                      child: Text(
-                        'Always',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.0,
+                      child: MaterialButton(
+                        child: Text(
+                          'Always',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                          ),
                         ),
-                      ),
 
-                      onPressed: () {
-                        if(questionNumber>=6){
-                          resultvalue+=if_always[questionNumber];
-                          alzvalue=resultvalue;
-                          Navigator.pushNamed(context,AlzSymRes.id);
-                        }
-                        else if(questionNumber<=5)
-                        setState(() {
-                          resultvalue+=if_always[questionNumber];
-                          questionNumber++;
-                        });
-                      },
+                        onPressed: () {
+                          if(questionNumber>=6){
+                            resultvalue+=if_always[questionNumber];
+                            alzvalue=resultvalue;
+                            Navigator.pushNamed(context,AlzSymRes.id);
+                          }
+                          else if(questionNumber<=5)
+                          setState(() {
+                            resultvalue+=if_always[questionNumber];
+                            questionNumber++;
+                          });
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Expanded(
                   child: Padding(
                     padding: EdgeInsets.all(15.0),
-                    child: FlatButton(
+                    child: MaterialButton(
                       color: Colors.green,
                       child: Text(
                         'Sometimes',
@@ -114,7 +115,7 @@ class AlzSymState extends State<AlzSym>{
                 Expanded(
                   child: Padding(
                     padding: EdgeInsets.all(15.0),
-                    child: FlatButton(
+                    child: MaterialButton(
                       color: Colors.green,
                       child: Text(
                         'Frequently',
@@ -142,7 +143,7 @@ class AlzSymState extends State<AlzSym>{
                 Expanded(
                   child: Padding(
                     padding: EdgeInsets.all(15.0),
-                    child: FlatButton(
+                    child: MaterialButton(
                       color: Colors.green,
                       child: Text(
                         'Never',

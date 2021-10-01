@@ -49,7 +49,7 @@ class CheckUpState extends State<CheckUp>{
               ),
             ),
             SizedBox(
-              height: 48.0,
+              height: 49.0,
             ),
             Padding(
               padding: EdgeInsets.symmetric(vertical:12.0),

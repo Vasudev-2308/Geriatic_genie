@@ -25,42 +25,45 @@ import 'package:gerie/checkUps.dart';
 import 'package:gerie/depressionMail.dart';
 import 'package:gerie/parkMail.dart';
 import 'package:gerie/parkTest.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 void main() => runApp(Geriatic());
 
 class Geriatic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-  return MaterialApp(
-
-    home:WelcomeScreen(),
-  routes: {
-      WelcomeScreen.id :(context)=>WelcomeScreen(),
-    LoginScreen.id:(context)=>LoginScreen(),
-    Register.id:(context)=>Register(),
-    CheckUp.id:(context)=>CheckUp(),
-    DepressionSym.id:(context)=>DepressionSym(),
-    DepressionResults.id:(context)=>DepressionResults(),
-    AlzSym.id:(context)=>AlzSym(),
-    AlzSymRes.id:(context)=>AlzSymRes(),
-   ParkinSon.id:(context)=>ParkinSon(),
-    ParkinsonSymres.id:(context)=>ParkinsonSymres(),
-    AlzPermPopUp.id:(context)=>AlzPermPopUp(),
-    AlzTest.id:(context)=>AlzTest(),
-    MailSuccess.id:(context)=>MailSuccess(),
-    ParkPopUp.id:(context)=>ParkPopUp(),
-    parkTest.id:(context)=>parkTest(),
-    ParkTest2.id:(context)=>ParkTest2(),
-    ParkTest3.id:(context)=>ParkTest3(),
-    ParkTest4.id:(context)=>ParkTest4(),
-    ParkTest5.id:(context)=>ParkTest5(),
-    ParkTest6.id:(context)=>ParkTest6(),
-    ParkTest7.id:(context)=>ParkTest7(),
-    ParkMailPopUp.id:(context)=>ParkMailPopUp(),
-    ParkMail.id:(context)=>ParkMail(),
-    DepressionMail.id:(context)=>DepressionMail(),
-    RegisterMail.id:(context)=>RegisterMail(),
-    RegisterMailSuccess.id:(context)=>RegisterMailSuccess(),
-
-  },);
+    return MaterialApp(
+      theme: ThemeData(
+          textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
+      home: WelcomeScreen(),
+      routes: {
+        WelcomeScreen.id: (context) => WelcomeScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
+        Register.id: (context) => Register(),
+        CheckUp.id: (context) => CheckUp(),
+        DepressionSym.id: (context) => DepressionSym(),
+        DepressionResults.id: (context) => DepressionResults(),
+        AlzSym.id: (context) => AlzSym(),
+        AlzSymRes.id: (context) => AlzSymRes(),
+        ParkinSon.id: (context) => ParkinSon(),
+        ParkinsonSymres.id: (context) => ParkinsonSymres(),
+        AlzPermPopUp.id: (context) => AlzPermPopUp(),
+        AlzTest.id: (context) => AlzTest(),
+        MailSuccess.id: (context) => MailSuccess(),
+        ParkPopUp.id: (context) => ParkPopUp(),
+        parkTest.id: (context) => parkTest(),
+        ParkTest2.id: (context) => ParkTest2(),
+        ParkTest3.id: (context) => ParkTest3(),
+        ParkTest4.id: (context) => ParkTest4(),
+        ParkTest5.id: (context) => ParkTest5(),
+        ParkTest6.id: (context) => ParkTest6(),
+        ParkTest7.id: (context) => ParkTest7(),
+        ParkMailPopUp.id: (context) => ParkMailPopUp(),
+        ParkMail.id: (context) => ParkMail(),
+        DepressionMail.id: (context) => DepressionMail(),
+        RegisterMail.id: (context) => RegisterMail(),
+        RegisterMailSuccess.id: (context) => RegisterMailSuccess(),
+      },
+    );
   }
 }
